@@ -51,8 +51,52 @@ nvotes <- 261
 #    temp_raw_xml <- xmlParse(download_URL,ignoreBlanks = F)
 #    data <- xmlToDataFrame(temp_raw_xml) ###is to convert xml doc into List
 #    write.csv(data,"./VoteData/MetaDataVotes.csv")
-
-
-
+# 
+# vote1 <- read.csv("./VoteData/vote_1_data.csv")
+# vote_data <- vote1 %>% select(PersonId,
+#                           .id,
+#                           PersonShortSalutation,
+#                           PersonOfficialFirstName,
+#                           PersonOfficialLastName,
+#                           ConstituencyName,
+#                           ConstituencyProvinceTerritoryName,
+#                           VoteValueName) %>%
+#   mutate(Name = paste0(PersonShortSalutation,
+#                        PersonOfficialFirstName,
+#                        " ",
+#                        PersonOfficialLastName)) %>% 
+#     relocate(Name,.after=.id) %>% 
+#       select(-c(PersonShortSalutation,
+#                 PersonOfficialFirstName,
+#                 PersonOfficialLastName))
+# names(vote_data)[6] <- "Vote_1"
+# 
+# for(i in 2:nvotes){
+#   print(i)
+#   votetemp <- read.csv(paste0("./VoteData/vote_",i,"_data.csv"))
+#   votetemp <- votetemp %>% 
+#     select(PersonId,
+#            .id,
+#            PersonShortSalutation,
+#            PersonOfficialFirstName,
+#            PersonOfficialLastName,
+#            ConstituencyName,
+#            ConstituencyProvinceTerritoryName,
+#            VoteValueName) %>%
+#       mutate(Name = paste0(PersonShortSalutation,
+#                            PersonOfficialFirstName,
+#                            " ",
+#                            PersonOfficialLastName)) %>% 
+#         relocate(Name,.after=.id) %>% 
+#           select(-c(PersonShortSalutation,
+#                     PersonOfficialFirstName,
+#                     PersonOfficialLastName))
+#   names(votetemp)[6] <- paste("Vote_",i)
+#   vote_data <- full_join(vote_data,votetemp,by=c("PersonId",
+#                                                  ".id",
+#                                                  "Name",
+#                                                  "ConstituencyName",
+#                                                  "ConstituencyProvinceTerritoryName"))
+# }
 
 
