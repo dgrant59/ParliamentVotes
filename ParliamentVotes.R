@@ -363,3 +363,7 @@ for(i in 340:nrow(Member_pic)){
 file.rename(paste0("./Members/Photos/",list.files(path="./Members/Photos/",pattern="*.jpg")), paste0("./Members/Photos/",Member_pic$PersonId,".jpg"))
 library(base64enc)
 base64encode()
+
+
+members_constituency$Pic_URL <- paste0("https://raw.githubusercontent.com/dgrant59/ParliamentVotes/main/Members/Photos/",members_constituency$PersonId,".jpg")
+write.csv(members_constituency,"members_constituency.csv")
