@@ -3,24 +3,30 @@ library(dplyr)
 library(fuzzyjoin)
 library(stringr)
 library(XML)
-library(plyr)
+# library(plyr)
 library(RCurl)
-
+`%not_in%` <- Negate(`%in%`)
 #Take vote xml data and use this to create a csv file for each vote
 
-nvotes <- 261 #number of votes as of creating this, correct this to update it
+nvotes <- 408 #number of votes in the first session of parliament so far
 #add for(j in 1:nsession) if parliament is into 2nd session
 
+### GET THE DATA FOR EACH VOTE ###
+#This may take some time to download.
+#if you are updating your data, start at your last nvotes+1, instead of downloading 
+#the original n again
 for(i in 1:nvotes){
+  print(i)
   vote_xml_url <- paste0("https://www.ourcommons.ca/Members/en/votes/44/1/",i,"/xml")
   download_URL <- getURL(vote_xml_url)
   temp_raw_xml <- xmlParse(download_URL)
   tempvotedata <- xmlToDataFrame(temp_raw_xml)
-  # write.csv(tempvotedata,paste0("./VoteData/vote_",i,"_data.csv"))
+  #write.csv(tempvotedata,paste0("./VoteData/vote_",i,"_data.csv"))
 }
 
-
-#Get metadata on each vote (name of bill, subject, vote results, time of vote, etc.)
+### GET THE METADATA FOR THE VOTES ###
+#Get metadata on votes (name of bill, subject, vote results, time of vote, etc.)
+#because this is not included in the above csv for each vote
 vote_xml_url <- "https://www.ourcommons.ca/Members/en/votes/xml"
 download_URL <- getURL(vote_xml_url)
 temp_raw_xml <- xmlParse(download_URL,ignoreBlanks = F)
@@ -73,10 +79,6 @@ for(i in 1:nrow(members_constituency)){
   members_tenure$EndDate[i] <- temp_members[1,8]
 }
 
-#add the speaker of the house, Anthony Rota (doesn't vote)
-# members_tenure <- rbind(members_tenure, data.frame(PersonId=25452,
-#                                                    StartDate="2021-09-20 12:00:00 AM",
-#                                                    EndDate=NA))
 write.csv(members_tenure,"members_tenure.csv")
 
 members_caucus <- members_tenure
@@ -93,11 +95,18 @@ for(i in 1:nrow(members_caucus)){
     members_caucus[i,]$Caucus <- temp_members[1,6]
     }
 }
-#Add Alain Rayes, only member to change caucuses mid session
-members_caucus <- rbind(members_caucus,data.frame(PersonId=88600,
-                                                  StartDate="2021-09-20 12:00:00 AM",
-                                                  EndDate="2022-09-13 1:05:00 PM",
-                                                  Caucus="Conservative"))
+# These CSV files seem pretty randomly formatted, in Marc Garneau's case the formatting is 
+#slightly different so the start and end dates don't follow the same rules as above
+members_caucus[118,]$StartDate <- read.csv(paste0("./Members/",10524,".csv"),skip=1,header = T)[1,7]
+members_caucus[118,]$EndDate <- read.csv(paste0("./Members/",10524,".csv"),skip=1,header = T)[1,8]
+members_caucus[118,]$Caucus <- read.csv(paste0("./Members/",10524,".csv"),skip=1,header = T)[1,6]
+
+#Add Alain Rayes and Han Dong, members who changed caucuses mid session
+members_caucus <- rbind(members_caucus,data.frame(PersonId=c(88600,105091),
+                                                  ConstituencyName=c("Richmond-Arthabaska","Don Valley North"),
+                                                  StartDate=c("2021-09-20 12:00:00 AM","2021-09-20 12:00:00 AM"),
+                                                  EndDate=c("2022-09-13 1:05:00 PM","2023-03-22 5:00:00 PM"),
+                                                  Caucus=c("Conservative","Liberal")))
 
 write.csv(members_caucus,"members_caucus.csv")
 
@@ -140,7 +149,7 @@ vote_i_members <- rbind(members_caucus %>%
                           filter(EndDate ==""& vote_date > as.POSIXct(StartDate)),
                         members_caucus %>% 
                           filter(EndDate!="") %>% 
-                            filter(as.POSIXct(StartDate) <= vote_date & vote_date <= as.POSIXct(EndDate)))
+                          filter(as.POSIXct(StartDate) <= vote_date & vote_date <= as.POSIXct(EndDate)))
 
 vote_i_members <- vote_i_members[vote_i_members$PersonId %in% setdiff(vote_i_members$PersonId,vote_data$PersonId),]
 
@@ -148,23 +157,22 @@ for(j in 1:nrow(vote_i_members)){
   
   member_temp <- fread(paste0("./Members/",vote_i_members$PersonId[j],".csv"),skip=1,fill=T,header=T,sep=",",select=c(1:5),nrows=1)
   vote_data <- rbind(vote_data,
-                     data.frame(.id = "VoteParticipant",
-                                DecisionEventDateTime = vote_date,
-                                ConsituencyName = member_temp[1,4],
-                                VoteValueName = "Did not vote",
-                                PersonOfficialFirstName = member_temp[1,2],
-                                PersonOfficialLastName = member_temp[1,3],
-                                ConstituencyProvinceTerritoryName = member_temp[1,5],
-                                CaucusShortName = vote_i_members$Caucus[j],
-                                IsVoteYea = FALSE,
-                                IsVoteNay = FALSE,
-                                IsVotePaired = FALSE,
-                                DecisionResultName = vote_data$DecisionResultName[1],
-                                PersonId = vote_i_members$PersonId[j],
-                                VoteId = 4411),
+                     data.frame(
+                       DecisionEventDateTime = vote_date,
+                       ConsituencyName = member_temp[1,4],
+                       VoteValueName = "Did not vote",
+                       PersonOfficialFirstName = member_temp[1,2],
+                       PersonOfficialLastName = member_temp[1,3],
+                       ConstituencyProvinceTerritoryName = member_temp[1,5],
+                       CaucusShortName = vote_i_members$Caucus[j],
+                       IsVoteYea = FALSE,
+                       IsVoteNay = FALSE,
+                       IsVotePaired = FALSE,
+                       DecisionResultName = vote_data$DecisionResultName[1],
+                       PersonId = vote_i_members$PersonId[j],
+                       VoteId = 4411),
                      use.names=F)
 }  
-
 
 for(i in 2:nvotes){
   print(i)
@@ -190,33 +198,77 @@ for(i in 2:nvotes){
   vote_i_members <- vote_i_members[vote_i_members$PersonId %in% setdiff(vote_i_members$PersonId,votetemp$PersonId),]
   
   
- #if there are members who were employed but did not vote, add them as "Did not vote" 
+  #if there are members who were employed but did not vote, add them as "Did not vote" 
   if(nrow(vote_i_members)>0){
     for(j in 1:nrow(vote_i_members)){
       
       member_temp <- fread(paste0("./Members/",vote_i_members$PersonId[j],".csv"),skip=1,fill=T,header=T,sep=",",select=c(1:5),nrows=1)
       vote_data <- rbind(vote_data,
-                         data.frame(.id = "VoteParticipant",
-                                    DecisionEventDateTime = vote_date,
-                                    ConsituencyName = member_temp[1,4],
-                                    VoteValueName = "Did not vote",
-                                    PersonOfficialFirstName = member_temp[1,2],
-                                    PersonOfficialLastName = member_temp[1,3],
-                                    ConstituencyProvinceTerritoryName = member_temp[1,5],
-                                    CaucusShortName = vote_i_members$Caucus[j],
-                                    IsVoteYea = FALSE,
-                                    IsVoteNay = FALSE,
-                                    IsVotePaired = FALSE,
-                                    DecisionResultName = vote_data$DecisionResultName[1],
-                                    PersonId = vote_i_members$PersonId[j],
-                                    votetemp$VoteId[1]),
+                         data.frame(
+                           DecisionEventDateTime = vote_date,
+                           ConsituencyName = member_temp[1,4],
+                           VoteValueName = "Did not vote",
+                           PersonOfficialFirstName = member_temp[1,2],
+                           PersonOfficialLastName = member_temp[1,3],
+                           ConstituencyProvinceTerritoryName = member_temp[1,5],
+                           CaucusShortName = vote_i_members$Caucus[j],
+                           IsVoteYea = FALSE,
+                           IsVoteNay = FALSE,
+                           IsVotePaired = FALSE,
+                           DecisionResultName = vote_data$DecisionResultName[1],
+                           PersonId = vote_i_members$PersonId[j],
+                           votetemp$VoteId[1]),
                          use.names=F)
     }  
   }
 }
 
+
+#combine casewhen adn decisioneventdatetime
+
+# 25524 pierre
+# 59110 bergen September 10, 2022
+#  toole February 2, 2022 ended 72773
+# green after November 19 2022 2897
+
+vote_data <- vote_data %>%
+  mutate(IsLeader = case_when(DecisionEventDateTime < "2022-02-02" & PersonId %in%c(58733,104669,71588,72773)~1,
+                              DecisionEventDateTime < "2022-02-02" & PersonId %not_in%c(58733,104669,71588,72773)~0,
+                              DecisionEventDateTime >= "2022-02-02" & DecisionEventDateTime < "2022-09-10" & PersonId %in%c(58733,104669,71588,59110)~1,
+                              DecisionEventDateTime >= "2022-02-02" & DecisionEventDateTime < "2022-09-10" & PersonId %not_in%c(58733,104669,71588,59110)~0,
+                              DecisionEventDateTime >= "2022-09-10" & DecisionEventDateTime < "2022-11-19" & PersonId %in%c(58733,104669,71588,25524)~1,
+                              DecisionEventDateTime >= "2022-09-10" & DecisionEventDateTime < "2022-11-19" & PersonId %not_in%c(58733,104669,71588,25524)~0,
+                              DecisionEventDateTime >= "2022-11-19" & PersonId %in%c(2897,58733,104669,71588,25524)~1,
+                              DecisionEventDateTime >= "2022-11-19" & PersonId %not_in%c(2897,58733,104669,71588,25524)~0))
+
+vote_data$IsLeader <- as.logical(vote_data$IsLeader)  
+vote_data <- vote_data %>%
+  group_by(VoteId, CaucusShortName) %>%
+  mutate(
+    LeaderAgree = ifelse(as.logical(IsLeader) | any(IsLeader),
+                         ifelse(VoteValueName=="Paired",
+                                NA,
+                                VoteValueName == VoteValueName[as.logical(IsLeader)]
+                         ),
+                         NA),
+    LeaderAgree = as.integer(LeaderAgree),
+    Participated = ifelse(VoteValueName=="Did not vote",0,1)
+  ) %>%ungroup()
+
+
 write.csv(vote_data,"vote_data.csv")
 
+members_caucus <- inner_join(vote_data %>% group_by(PersonId,CaucusShortName) %>% summarise(VotesParticipated = sum(Participated),
+                                                                                            Percentage_Whipped = round(100*mean(LeaderAgree,na.rm=T),1)),
+                             members_caucus, by=c("PersonId"="PersonId","CaucusShortName"="Caucus"))
+
+members_caucus[which(is.na(members_caucus$Percentage_Whipped)),]$Percentage_Whipped <- 0
+
+write.csv(members_caucus,"members_caucus.csv")
+
+Metadata_votes <- fread("./VoteData/MetaDataVotes.csv",drop=1)
+Metadata_votes$Link <- paste0("https://www.ourcommons.ca/Members/en/votes/44/1/",Metadata_votes$DecisionDivisionNumber)
+write.csv(Metadata_votes,"./VoteData/MetaDataVotes.csv")
 
 # Get pictures of members from parliament website
 # Pictures have the form LastNameFirstName_ShortCaucus

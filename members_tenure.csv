@@ -1,0 +1,340 @@
+"","PersonId","ConstituencyName","StartDate","EndDate"
+"1",89156,"Edmonton Manning","2021-09-20 12:00:00 AM",NA
+"2",105340,"Parry Sound—Muskoka","2021-09-20 12:00:00 AM",NA
+"3",72029,"Central Okanagan—Similkameen—Nicola","2021-09-20 12:00:00 AM",NA
+"4",89258,"Cloverdale—Langley City","2021-09-20 12:00:00 AM",NA
+"5",89535,"Mississauga Centre","2021-09-20 12:00:00 AM",NA
+"6",110339,"Brampton Centre","2021-09-20 12:00:00 AM",NA
+"7",25446,"Niagara West","2021-09-20 12:00:00 AM",NA
+"8",96081,"Oakville","2021-09-20 12:00:00 AM",NA
+"9",89449,"Scarborough—Rouge Park","2021-09-20 12:00:00 AM",NA
+"10",25470,"Timmins—James Bay","2021-09-20 12:00:00 AM",NA
+"11",89294,"North Okanagan—Shuswap","2021-09-20 12:00:00 AM",NA
+"12",89383,"Madawaska—Restigouche","2021-09-20 12:00:00 AM",NA
+"13",88860,"Nepean","2021-09-20 12:00:00 AM",NA
+"14",104586,"Fredericton","2021-09-20 12:00:00 AM",NA
+"15",105854,"Skeena—Bulkley Valley","2021-09-20 12:00:00 AM",NA
+"16",88867,"Niagara Centre","2021-09-20 12:00:00 AM",NA
+"17",111067,"Steveston—Richmond East","2021-09-20 12:00:00 AM",NA
+"18",105121,"Etobicoke Centre","2021-09-20 12:00:00 AM",NA
+"19",30330,"Niagara Falls","2021-09-20 12:00:00 AM",NA
+"20",86261,"Foothills","2021-09-20 12:00:00 AM",NA
+"21",102275,"Leeds—Grenville—Thousand Islands and Rideau Lakes","2021-09-20 12:00:00 AM",NA
+"22",111023,"Nanaimo—Ladysmith","2021-09-20 12:00:00 AM",NA
+"23",104571,"Sydney—Victoria","2021-09-20 12:00:00 AM",NA
+"24",376,"La Pointe-de-l'Île","2021-09-20 12:00:00 AM",NA
+"25",89236,"Burnaby North—Seymour","2021-09-20 12:00:00 AM",NA
+"26",88567,"Outremont","2021-09-20 12:00:00 AM",NA
+"27",992,"Toronto—St. Paul's","2021-09-20 12:00:00 AM",NA
+"28",96361,"Calgary Heritage","2021-09-20 12:00:00 AM","2022-12-31 11:59:59 PM"
+"29",59110,"Portage—Lisgar","2021-09-20 12:00:00 AM","2023-02-28 11:59:59 PM"
+"30",88541,"Mégantic—L'Érable","2021-09-20 12:00:00 AM",NA
+"31",104622,"Abitibi—Baie-James—Nunavik—Eeyou","2021-09-20 12:00:00 AM",NA
+"32",25475,"Selkirk—Interlake—Eastman","2021-09-20 12:00:00 AM",NA
+"33",88449,"Compton—Stanstead","2021-09-20 12:00:00 AM",NA
+"34",88934,"St. Catharines","2021-09-20 12:00:00 AM",NA
+"35",89032,"Elmwood—Transcona","2021-09-20 12:00:00 AM",NA
+"36",88961,"Scarborough Southwest","2021-09-20 12:00:00 AM",NA
+"37",104669,"Beloeil—Chambly","2021-09-20 12:00:00 AM",NA
+"38",104705,"Rimouski-Neigette—Témiscouata—Les Basques","2021-09-20 12:00:00 AM",NA
+"39",89354,"North Island—Powell River","2021-09-20 12:00:00 AM",NA
+"40",59156,"Carlton Trail—Eagle Creek","2021-09-20 12:00:00 AM",NA
+"41",104555,"Kings—Hants","2021-09-20 12:00:00 AM",NA
+"42",89147,"Edmonton Centre","2021-09-20 12:00:00 AM",NA
+"43",58775,"Rosemont—La Petite-Patrie","2021-09-20 12:00:00 AM",NA
+"44",110487,"Kitchener South—Hespeler","2021-09-20 12:00:00 AM",NA
+"45",88369,"Tobique—Mactaquac","2021-09-20 12:00:00 AM",NA
+"46",88674,"Barrie—Innisfil","2021-09-20 12:00:00 AM",NA
+"47",104977,"Sherbrooke","2021-09-20 12:00:00 AM",NA
+"48",110354,"Brantford—Brant","2021-09-20 12:00:00 AM",NA
+"49",104786,"Lac-Saint-Jean","2021-09-20 12:00:00 AM",NA
+"50",35897,"Red Deer—Lacombe","2021-09-20 12:00:00 AM",NA
+"51",89327,"South Okanagan—West Kootenay","2021-09-20 12:00:00 AM",NA
+"52",111007,"Kamloops—Thompson—Cariboo","2021-09-20 12:00:00 AM",NA
+"53",89059,"Winnipeg South Centre","2021-09-20 12:00:00 AM","2022-12-12 11:59:59 PM"
+"54",25486,"Oshawa","2021-09-20 12:00:00 AM",NA
+"55",71270,"Charlottetown","2021-09-20 12:00:00 AM",NA
+"56",104678,"Thérèse-De Blainville","2021-09-20 12:00:00 AM",NA
+"57",89000,"Waterloo","2021-09-20 12:00:00 AM",NA
+"58",110882,"Calgary Skyview","2021-09-20 12:00:00 AM",NA
+"59",110649,"Simcoe North","2021-09-20 12:00:00 AM",NA
+"60",88633,"Saint-Maurice—Champlain","2021-09-20 12:00:00 AM",NA
+"61",104741,"Drummond","2021-09-20 12:00:00 AM",NA
+"62",110225,"Pontiac","2021-09-20 12:00:00 AM",NA
+"63",88953,"Scarborough North","2021-09-20 12:00:00 AM",NA
+"64",110513,"Markham—Unionville","2021-09-20 12:00:00 AM",NA
+"65",25488,"Wellington—Halton Hills","2021-09-20 12:00:00 AM",NA
+"66",105908,"Victoria","2021-09-20 12:00:00 AM",NA
+"67",110438,"Hamilton East—Stoney Creek","2021-09-20 12:00:00 AM",NA
+"68",89219,"St. Albert—Edmonton","2021-09-20 12:00:00 AM",NA
+"69",88350,"Acadie—Bathurst","2021-09-20 12:00:00 AM",NA
+"70",110373,"Don Valley East","2021-09-20 12:00:00 AM",NA
+"71",88994,"Toronto—Danforth","2021-09-20 12:00:00 AM",NA
+"72",35909,"Pitt Meadows—Maple Ridge","2021-09-20 12:00:00 AM",NA
+"73",88884,"Oakville North—Burlington","2021-09-20 12:00:00 AM",NA
+"74",105521,"Kildonan—St. Paul","2021-09-20 12:00:00 AM",NA
+"75",102653,"York—Simcoe","2021-09-20 12:00:00 AM",NA
+"76",59325,"Vancouver Kingsway","2021-09-20 12:00:00 AM",NA
+"77",35315,"Salaberry—Suroît","2021-09-20 12:00:00 AM",NA
+"78",88535,"Louis-Saint-Laurent","2021-09-20 12:00:00 AM",NA
+"79",49344,"West Nova","2021-09-20 12:00:00 AM",NA
+"80",104715,"Beauport—Côte-de-Beaupré—Île d'Orléans—Charlevoix","2021-09-20 12:00:00 AM",NA
+"81",104922,"Rivière-des-Mille-Îles","2021-09-20 12:00:00 AM",NA
+"82",110889,"Edmonton Griesbach","2021-09-20 12:00:00 AM",NA
+"83",31098,"Surrey—Newton","2021-09-20 12:00:00 AM",NA
+"84",88453,"Dorval—Lachine—LaSalle","2021-09-20 12:00:00 AM",NA
+"85",109915,"Halifax West","2021-09-20 12:00:00 AM",NA
+"86",89249,"Cariboo—Prince George","2021-09-20 12:00:00 AM",NA
+"87",105091,"Don Valley North","2021-09-20 12:00:00 AM",NA
+"88",105410,"Simcoe—Grey","2021-09-20 12:00:00 AM",NA
+"89",59226,"Red Deer—Mountain View","2021-09-20 12:00:00 AM",NA
+"90",88756,"Glengarry—Prescott—Russell","2021-09-20 12:00:00 AM",NA
+"91",84660,"Bourassa","2021-09-20 12:00:00 AM",NA
+"92",89408,"Québec","2021-09-20 12:00:00 AM",NA
+"93",31119,"Winnipeg South","2021-09-20 12:00:00 AM",NA
+"94",105422,"Stormont—Dundas—South Glengarry","2021-09-20 12:00:00 AM",NA
+"95",88721,"Davenport","2021-09-20 12:00:00 AM",NA
+"96",89010,"Willowdale","2021-09-20 12:00:00 AM",NA
+"97",88515,"Laval—Les Îles","2021-09-20 12:00:00 AM",NA
+"98",109905,"Cumberland—Colchester","2021-09-20 12:00:00 AM",NA
+"99",105082,"Chatham-Kent—Leamington","2021-09-20 12:00:00 AM",NA
+"100",88687,"Beaches—East York","2021-09-20 12:00:00 AM",NA
+"101",98749,"Battlefords—Lloydminster","2021-09-20 12:00:00 AM",NA
+"102",84672,"Provencher","2021-09-20 12:00:00 AM",NA
+"103",35904,"Abbotsford","2021-09-20 12:00:00 AM",NA
+"104",88478,"Hull—Aylmer","2021-09-20 12:00:00 AM",NA
+"105",110604,"Peterborough—Kawartha","2021-09-20 12:00:00 AM",NA
+"106",88325,"Halifax","2021-09-20 12:00:00 AM",NA
+"107",20878,"South Surrey—White Rock","2021-09-20 12:00:00 AM",NA
+"108",88323,"Dartmouth—Cole Harbour","2021-09-20 12:00:00 AM",NA
+"109",71692,"Mississauga East—Cooksville","2021-09-20 12:00:00 AM",NA
+"110",96356,"Ottawa—Vanier","2021-09-20 12:00:00 AM",NA
+"111",88605,"Rivière-du-Nord","2021-09-20 12:00:00 AM",NA
+"112",88827,"London North Centre","2021-09-20 12:00:00 AM",NA
+"113",88316,"Central Nova","2021-09-20 12:00:00 AM",NA
+"114",84665,"University—Rosedale","2021-09-20 12:00:00 AM",NA
+"115",1589,"Vancouver Centre","2021-09-20 12:00:00 AM",NA
+"116",110534,"Mississauga—Malton","2021-09-20 12:00:00 AM",NA
+"117",1809,"Renfrew—Nipissing—Pembroke","2021-09-20 12:00:00 AM",NA
+"118",10524,"Notre-Dame-de-Grâce—Westmount","2021-09-20 12:00:00 AM","2023-03-08 11:59:59 PM"
+"119",110189,"Mirabel","2021-09-20 12:00:00 AM",NA
+"120",71995,"Esquimalt—Saanich—Sooke","2021-09-20 12:00:00 AM",NA
+"121",104806,"Laurentides—Labelle","2021-09-20 12:00:00 AM",NA
+"122",63908,"Montmagny—L'Islet—Kamouraska—Rivière-du-Loup","2021-09-20 12:00:00 AM",NA
+"123",89226,"Sherwood Park—Fort Saskatchewan","2021-09-20 12:00:00 AM",NA
+"124",88802,"Kingston and the Islands","2021-09-20 12:00:00 AM",NA
+"125",88938,"Sarnia—Lambton","2021-09-20 12:00:00 AM",NA
+"126",89407,"Portneuf—Jacques-Cartier","2021-09-20 12:00:00 AM",NA
+"127",110918,"Fort McMurray—Cold Lake","2021-09-20 12:00:00 AM",NA
+"128",88715,"Burlington","2021-09-20 12:00:00 AM",NA
+"129",35397,"Lévis—Lotbinière","2021-09-20 12:00:00 AM",NA
+"130",105802,"Kelowna—Lake Country","2021-09-20 12:00:00 AM",NA
+"131",93023,"Hamilton Centre","2021-09-20 12:00:00 AM",NA
+"132",14171,"Laurier—Sainte-Marie","2021-09-20 12:00:00 AM",NA
+"133",88984,"Thunder Bay—Superior North","2021-09-20 12:00:00 AM",NA
+"134",105630,"Calgary Forest Lawn","2021-09-20 12:00:00 AM",NA
+"135",111109,"Yukon","2021-09-20 12:00:00 AM",NA
+"136",89274,"Fleetwood—Port Kells","2021-09-20 12:00:00 AM",NA
+"137",110446,"Hamilton Mountain","2021-09-20 12:00:00 AM",NA
+"138",59148,"Prince Albert","2021-09-20 12:00:00 AM",NA
+"139",25508,"Ajax","2021-09-20 12:00:00 AM",NA
+"140",88558,"Mount Royal","2021-09-20 12:00:00 AM",NA
+"141",31289,"Algoma—Manitoulin—Kapuskasing","2021-09-20 12:00:00 AM",NA
+"142",89020,"York South—Weston","2021-09-20 12:00:00 AM",NA
+"143",88292,"Long Range Mountains","2021-09-20 12:00:00 AM",NA
+"144",71337,"Alfred-Pellan","2021-09-20 12:00:00 AM",NA
+"145",111116,"Nunavut","2021-09-20 12:00:00 AM",NA
+"146",107097,"Toronto Centre","2021-09-20 12:00:00 AM",NA
+"147",105229,"Markham—Stouffville","2021-09-20 12:00:00 AM",NA
+"148",89167,"Edmonton Riverbend","2021-09-20 12:00:00 AM",NA
+"149",89263,"Courtenay—Alberni","2021-09-20 12:00:00 AM",NA
+"150",88384,"Ahuntsic-Cartierville","2021-09-20 12:00:00 AM",NA
+"151",13218,"Labrador","2021-09-20 12:00:00 AM",NA
+"152",88929,"Richmond Hill","2021-09-20 12:00:00 AM",NA
+"153",16399,"New Westminster—Burnaby","2021-09-20 12:00:00 AM",NA
+"154",110502,"London West","2021-09-20 12:00:00 AM",NA
+"155",104531,"Cape Breton—Canso","2021-09-20 12:00:00 AM",NA
+"156",89130,"Calgary Rocky Ridge","2021-09-20 12:00:00 AM",NA
+"157",88849,"Mississauga—Erin Mills","2021-09-20 12:00:00 AM",NA
+"158",88705,"Brampton West","2021-09-20 12:00:00 AM",NA
+"159",89136,"Calgary Shepard","2021-09-20 12:00:00 AM",NA
+"160",105009,"Vimy","2021-09-20 12:00:00 AM",NA
+"161",89080,"Regina—Wascana","2021-09-20 12:00:00 AM",NA
+"162",110454,"Hastings—Lennox and Addington","2021-09-20 12:00:00 AM",NA
+"163",105614,"Battle River—Crowfoot","2021-09-20 12:00:00 AM",NA
+"164",96367,"Calgary Midnapore","2021-09-20 12:00:00 AM",NA
+"165",71820,"Windsor—Tecumseh","2021-09-20 12:00:00 AM",NA
+"166",89346,"Vancouver East","2021-09-20 12:00:00 AM",NA
+"167",35857,"Edmonton—Wetaskiwin","2021-09-20 12:00:00 AM",NA
+"168",92209,"Orléans","2021-09-20 12:00:00 AM",NA
+"169",96350,"Saint-Laurent","2021-09-20 12:00:00 AM",NA
+"170",88501,"LaSalle—Émard—Verdun","2021-09-20 12:00:00 AM",NA
+"171",30552,"Winnipeg North","2021-09-20 12:00:00 AM",NA
+"172",110665,"Thornhill","2021-09-20 12:00:00 AM",NA
+"173",110663,"Sudbury","2021-09-20 12:00:00 AM",NA
+"174",104973,"Shefford","2021-09-20 12:00:00 AM",NA
+"175",88394,"Argenteuil—La Petite-Nation","2021-09-20 12:00:00 AM",NA
+"176",105291,"Northumberland—Peterborough South","2021-09-20 12:00:00 AM",NA
+"177",1813,"Beauséjour","2021-09-20 12:00:00 AM",NA
+"178",88460,"Gaspésie—Les Îles-de-la-Madeleine","2021-09-20 12:00:00 AM",NA
+"179",104630,"Abitibi—Témiscamingue","2021-09-20 12:00:00 AM",NA
+"180",105120,"Essex","2021-09-20 12:00:00 AM",NA
+"181",88958,"Haldimand—Norfolk","2021-09-20 12:00:00 AM",NA
+"182",89139,"Calgary Signal Hill","2021-09-20 12:00:00 AM",NA
+"183",88532,"Louis-Hébert","2021-09-20 12:00:00 AM",NA
+"184",98079,"Sturgeon River—Parkland","2021-09-20 12:00:00 AM",NA
+"185",35600,"Huron—Bruce","2021-09-20 12:00:00 AM",NA
+"186",88368,"Saint John—Rothesay","2021-09-20 12:00:00 AM",NA
+"187",88761,"Guelph","2021-09-20 12:00:00 AM",NA
+"188",88810,"Kitchener—Conestoga","2021-09-20 12:00:00 AM",NA
+"189",33,"Cardigan","2021-09-20 12:00:00 AM",NA
+"190",109891,"Malpeque","2021-09-20 12:00:00 AM",NA
+"191",89269,"Cowichan—Malahat—Langford","2021-09-20 12:00:00 AM",NA
+"192",891,"Oxford","2021-09-20 12:00:00 AM","2023-01-28 11:59:59 PM"
+"193",88468,"Gatineau","2021-09-20 12:00:00 AM",NA
+"194",7251,"Brandon—Souris","2021-09-20 12:00:00 AM",NA
+"195",88748,"Etobicoke—Lakeshore","2021-09-20 12:00:00 AM",NA
+"196",100521,"Chicoutimi—Le Fjord","2021-09-20 12:00:00 AM",NA
+"197",104756,"Hochelaga","2021-09-20 12:00:00 AM",NA
+"198",9137,"Windsor West","2021-09-20 12:00:00 AM",NA
+"199",2897,"Saanich—Gulf Islands","2021-09-20 12:00:00 AM",NA
+"200",71599,"Cambridge","2021-09-20 12:00:00 AM",NA
+"201",3306,"Dauphin—Swan River—Neepawa","2021-09-20 12:00:00 AM",NA
+"202",89179,"Edmonton West","2021-09-20 12:00:00 AM",NA
+"203",88283,"Avalon","2021-09-20 12:00:00 AM",NA
+"204",9486,"Ottawa South","2021-09-20 12:00:00 AM",NA
+"205",957,"Scarborough—Guildwood","2021-09-20 12:00:00 AM",NA
+"206",59293,"Coquitlam—Port Coquitlam","2021-09-20 12:00:00 AM",NA
+"207",105623,"Calgary Centre","2021-09-20 12:00:00 AM",NA
+"208",89374,"Northwest Territories","2021-09-20 12:00:00 AM",NA
+"209",105689,"Edmonton Strathcona","2021-09-20 12:00:00 AM",NA
+"210",105186,"Kenora","2021-09-20 12:00:00 AM",NA
+"211",58621,"Brossard—Saint-Lambert","2021-09-20 12:00:00 AM",NA
+"212",88738,"Eglinton—Lawrence","2021-09-20 12:00:00 AM",NA
+"213",111048,"Richmond Centre","2021-09-20 12:00:00 AM",NA
+"214",104648,"Avignon—La Mitis—Matane—Matapédia","2021-09-20 12:00:00 AM",NA
+"215",88660,"Ville-Marie—Le Sud-Ouest—Île-des-Soeurs","2021-09-20 12:00:00 AM",NA
+"216",17210,"Fundy Royal","2021-09-20 12:00:00 AM",NA
+"217",105511,"Charleswood—St. James—Assiniboia—Headingley","2021-09-20 12:00:00 AM",NA
+"218",110476,"Kitchener Centre","2021-09-20 12:00:00 AM",NA
+"219",105807,"Kootenay—Columbia","2021-09-20 12:00:00 AM",NA
+"220",88308,"Egmont","2021-09-20 12:00:00 AM",NA
+"221",94305,"Medicine Hat—Cardston—Warner","2021-09-20 12:00:00 AM",NA
+"222",35950,"Vancouver Quadra","2021-09-20 12:00:00 AM",NA
+"223",110415,"Flamborough—Glanbrook","2021-09-20 12:00:00 AM",NA
+"224",110572,"Ottawa Centre","2021-09-20 12:00:00 AM",NA
+"225",88917,"Perth—Wellington","2021-09-20 12:00:00 AM",NA
+"226",96352,"Markham—Thornhill","2021-09-20 12:00:00 AM",NA
+"227",72023,"Vancouver Granville","2021-09-20 12:00:00 AM",NA
+"228",104947,"Saint-Jean","2021-09-20 12:00:00 AM",NA
+"229",88925,"Pickering—Uxbridge","2021-09-20 12:00:00 AM",NA
+"230",58858,"Don Valley West","2021-09-20 12:00:00 AM",NA
+"231",88299,"St. John's South—Mount Pearl","2021-09-20 12:00:00 AM",NA
+"232",72773,"Durham","2021-09-20 12:00:00 AM","2023-08-02 11:59:59 PM"
+"233",105559,"Cypress Hills—Grasslands","2021-09-20 12:00:00 AM",NA
+"234",71454,"Charlesbourg—Haute-Saint-Charles","2021-09-20 12:00:00 AM",NA
+"235",88595,"Repentigny","2021-09-20 12:00:00 AM",NA
+"236",109922,"South Shore—St. Margarets","2021-09-20 12:00:00 AM",NA
+"237",88418,"Berthier—Maskinongé","2021-09-20 12:00:00 AM",NA
+"238",88364,"Moncton—Riverview—Dieppe","2021-09-20 12:00:00 AM",NA
+"239",413,"Bécancour—Nicolet—Saurel","2021-09-20 12:00:00 AM",NA
+"240",25524,"Carleton","2021-09-20 12:00:00 AM",NA
+"241",105437,"Thunder Bay—Rainy River","2021-09-20 12:00:00 AM",NA
+"242",89272,"Delta","2021-09-20 12:00:00 AM",NA
+"243",88600,"Richmond—Arthabaska","2021-09-20 12:00:00 AM",NA
+"244",105598,"Saskatoon West","2021-09-20 12:00:00 AM",NA
+"245",1827,"Lanark—Frontenac—Kingston","2021-09-20 12:00:00 AM",NA
+"246",71902,"Calgary Nose Hill","2021-09-20 12:00:00 AM",NA
+"247",59235,"Banff—Airdrie","2021-09-20 12:00:00 AM",NA
+"248",105191,"King—Vaughan","2021-09-20 12:00:00 AM",NA
+"249",88617,"Marc-Aurèle-Fortin","2021-09-20 12:00:00 AM",NA
+"250",25451,"Honoré-Mercier","2021-09-20 12:00:00 AM",NA
+"251",98744,"Bonavista—Burin—Trinity","2021-09-20 12:00:00 AM",NA
+"252",88521,"Longueuil—Charles-LeMoyne","2021-09-20 12:00:00 AM",NA
+"253",105210,"Lambton—Kent—Middlesex","2021-09-20 12:00:00 AM",NA
+"254",105070,"Bruce—Grey—Owen Sound","2021-09-20 12:00:00 AM",NA
+"255",88698,"Brampton North","2021-09-20 12:00:00 AM",NA
+"256",89497,"Vancouver South","2021-09-20 12:00:00 AM",NA
+"257",107099,"York Centre","2021-09-20 12:00:00 AM",NA
+"258",88333,"Sackville—Preston—Chezzetcook","2021-09-20 12:00:00 AM",NA
+"259",89339,"Surrey Centre","2021-09-20 12:00:00 AM",NA
+"260",25453,"Lac-Saint-Louis","2021-09-20 12:00:00 AM",NA
+"261",25454,"Regina—Qu'Appelle","2021-09-20 12:00:00 AM",NA
+"262",88649,"Vaudreuil—Soulanges","2021-09-20 12:00:00 AM",NA
+"263",88770,"Haliburton—Kawartha Lakes—Brock","2021-09-20 12:00:00 AM",NA
+"264",58841,"Dufferin—Caledon","2021-09-20 12:00:00 AM",NA
+"265",88874,"Nickel Belt","2021-09-20 12:00:00 AM",NA
+"266",1787,"Humber River—Black Creek","2021-09-20 12:00:00 AM",NA
+"267",88442,"Châteauguay—Lacolle","2021-09-20 12:00:00 AM",NA
+"268",88944,"Sault Ste. Marie","2021-09-20 12:00:00 AM",NA
+"269",89109,"Bow River","2021-09-20 12:00:00 AM",NA
+"270",105031,"Barrie—Springwater—Oro-Medonte","2021-09-20 12:00:00 AM",NA
+"271",88703,"Brampton South","2021-09-20 12:00:00 AM",NA
+"272",105045,"Brampton East","2021-09-20 12:00:00 AM",NA
+"273",104773,"Jonquière","2021-09-20 12:00:00 AM",NA
+"274",110300,"Terrebonne","2021-09-20 12:00:00 AM",NA
+"275",71588,"Burnaby South","2021-09-20 12:00:00 AM",NA
+"276",109867,"Coast of Bays—Central—Notre Dame","2021-09-20 12:00:00 AM",NA
+"277",88999,"Vaughan—Woodbridge","2021-09-20 12:00:00 AM",NA
+"278",105751,"Yellowhead","2021-09-20 12:00:00 AM",NA
+"279",88852,"Mississauga—Lakeshore","2021-09-20 12:00:00 AM","2022-05-27 11:59:59 PM"
+"280",105581,"Regina—Lewvan","2021-09-20 12:00:00 AM",NA
+"281",88485,"Joliette","2021-09-20 12:00:00 AM",NA
+"282",109951,"Miramichi—Grand Lake","2021-09-20 12:00:00 AM",NA
+"283",110044,"Brome—Missisquoi","2021-09-20 12:00:00 AM",NA
+"284",89198,"Lakeland","2021-09-20 12:00:00 AM",NA
+"285",110459,"Kanata—Carleton","2021-09-20 12:00:00 AM",NA
+"286",88784,"Hamilton West—Ancaster—Dundas","2021-09-20 12:00:00 AM",NA
+"287",105024,"Aurora—Oak Ridges—Richmond Hill","2021-09-20 12:00:00 AM",NA
+"288",88552,"Montcalm","2021-09-20 12:00:00 AM",NA
+"289",104783,"La Prairie","2021-09-20 12:00:00 AM",NA
+"290",89200,"Lethbridge","2021-09-20 12:00:00 AM",NA
+"291",109877,"St. John's East","2021-09-20 12:00:00 AM",NA
+"292",84882,"Saskatoon—University","2021-09-20 12:00:00 AM",NA
+"293",110800,"Moose Jaw—Lake Centre—Lanigan","2021-09-20 12:00:00 AM",NA
+"294",58733,"Papineau","2021-09-20 12:00:00 AM",NA
+"295",88530,"Longueuil—Saint-Hubert","2021-09-20 12:00:00 AM",NA
+"296",105480,"Whitby","2021-09-20 12:00:00 AM",NA
+"297",30645,"Edmonton Mill Woods","2021-09-20 12:00:00 AM",NA
+"298",110538,"Mississauga—Streetsville","2021-09-20 12:00:00 AM",NA
+"299",105270,"Newmarket—Aurora","2021-09-20 12:00:00 AM",NA
+"300",105242,"Milton","2021-09-20 12:00:00 AM",NA
+"301",105811,"Langley—Aldergrove","2021-09-20 12:00:00 AM",NA
+"302",89045,"Saint Boniface—Saint Vital","2021-09-20 12:00:00 AM",NA
+"303",71738,"Ottawa West—Nepean","2021-09-20 12:00:00 AM",NA
+"304",88742,"Elgin—Middlesex—London","2021-09-20 12:00:00 AM",NA
+"305",105562,"Desnethé—Missinippi—Churchill River","2021-09-20 12:00:00 AM",NA
+"306",110009,"Bellechasse—Les Etchemins—Lévis","2021-09-20 12:00:00 AM",NA
+"307",89211,"Peace River—Westlock","2021-09-20 12:00:00 AM",NA
+"308",104656,"Beauport—Limoilou","2021-09-20 12:00:00 AM",NA
+"309",110306,"Trois-Rivières","2021-09-20 12:00:00 AM",NA
+"310",88910,"Parkdale—High Park","2021-09-20 12:00:00 AM",NA
+"311",89289,"Mission—Matsqui—Fraser Canyon","2021-09-20 12:00:00 AM",NA
+"312",110654,"Spadina—Fort York","2021-09-20 12:00:00 AM",NA
+"313",89098,"Yorkton—Melville","2021-09-20 12:00:00 AM",NA
+"314",35886,"Grande Prairie—Mackenzie","2021-09-20 12:00:00 AM",NA
+"315",89084,"Saskatoon—Grasswood","2021-09-20 12:00:00 AM",NA
+"316",89116,"Calgary Confederation","2021-09-20 12:00:00 AM",NA
+"317",105918,"West Vancouver—Sunshine Coast—Sea to Sky Country","2021-09-20 12:00:00 AM",NA
+"318",89300,"North Vancouver","2021-09-20 12:00:00 AM",NA
+"319",110330,"Bay of Quinte","2021-09-20 12:00:00 AM",NA
+"320",98747,"Scarborough—Agincourt","2021-09-20 12:00:00 AM",NA
+"321",88950,"Scarborough Centre","2021-09-20 12:00:00 AM",NA
+"322",105837,"Port Moody—Coquitlam","2021-09-20 12:00:00 AM",NA
+"323",72035,"Prince George—Peace River—Northern Rockies","2021-09-20 12:00:00 AM",NA
+"324",54157,"Pierrefonds—Dollard","2021-09-20 12:00:00 AM",NA
+"325",36037,"Churchill—Keewatinook Aski","2021-09-20 12:00:00 AM",NA
+"326",104957,"Saint-Léonard—Saint-Michel","2021-09-20 12:00:00 AM",NA
+"327",105221,"London—Fanshawe","2021-09-20 12:00:00 AM",NA
+"328",88422,"Pierre-Boucher—Les Patriotes—Verchères","2021-09-20 12:00:00 AM",NA
+"329",496,"Montarville","2021-09-20 12:00:00 AM",NA
+"330",58877,"Etobicoke North","2021-09-20 12:00:00 AM",NA
+"331",87121,"Winnipeg Centre","2021-09-20 12:00:00 AM",NA
+"332",104653,"Beauce","2021-09-20 12:00:00 AM",NA
+"333",104944,"Saint-Hyacinthe—Bagot","2021-09-20 12:00:00 AM",NA
+"334",71986,"Chilliwack—Hope","2021-09-20 12:00:00 AM",NA
+"335",71323,"New Brunswick Southwest","2021-09-20 12:00:00 AM",NA
+"336",88538,"Manicouagan","2021-09-20 12:00:00 AM",NA
+"337",89095,"Souris—Moose Mountain","2021-09-20 12:00:00 AM",NA
+"338",114349,"Mississauga—Lakeshore","2022-12-12 12:00:00 AM",NA
+"339",25452,"Nipissing—Timiskaming","2021-09-20 12:00:00 AM",NA
